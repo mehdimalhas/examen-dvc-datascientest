@@ -2,5 +2,8 @@
 /X_test.csv
 /y_train.csv
 /y_test.csv
+<<<<<<< HEAD
 /X_test_scaled.csv
 /X_train_scaled.csv
+=======
+>>>>>>> 7c9d0174006b0ae6bf20a6778262cfa03a40f4a1
