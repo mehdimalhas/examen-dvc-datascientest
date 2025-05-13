@@ -6,8 +6,8 @@ import os
 
 def main():
     # Chargement des données
-    X_train = pd.read_csv("data/processed/X_train_scaled.csv")
-    y_train = pd.read_csv("data/processed/y_train.csv").values.ravel()
+    X_train = pd.read_csv("data/processed_data/X_train_scaled.csv")
+    y_train = pd.read_csv("data/processed_data/y_train.csv").values.ravel()
 
     # Chargement du meilleur modèle (non encore entraîné)
     model = joblib.load("models/best_model.pkl")

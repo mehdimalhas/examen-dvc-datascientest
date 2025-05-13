@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 
 def main():
     # Charger les données brutes
-    raw_data_path = "data/raw/raw.csv"
+    raw_data_path = "data/raw_data/raw.csv"
     df = pd.read_csv(raw_data_path)
 
     # Supposer que la dernière colonne est la cible : silica_concentrate
@@ -19,12 +19,12 @@ def main():
     os.makedirs("data/processed", exist_ok=True)
 
     # Sauvegarder les jeux de données
-    X_train.to_csv("data/processed/X_train.csv", index=False)
-    X_test.to_csv("data/processed/X_test.csv", index=False)
-    y_train.to_csv("data/processed/y_train.csv", index=False)
-    y_test.to_csv("data/processed/y_test.csv", index=False)
+    X_train.to_csv("data/processed_data/X_train.csv", index=False)
+    X_test.to_csv("data/processed_data/X_test.csv", index=False)
+    y_train.to_csv("data/processed_data/y_train.csv", index=False)
+    y_test.to_csv("data/processed_data/y_test.csv", index=False)
 
-    print("Données divisées et sauvegardées dans data/processed.")
+    print("Données divisées et sauvegardées dans data/processed_data.")
 
 if __name__ == "__main__":
     main()

@@ -4,8 +4,8 @@ import os
 from sklearn.preprocessing import StandardScaler
 
 def main():
-    input_dir = "data/processed"
-    output_dir = "data/processed"
+    input_dir = "data/processed_data"
+    output_dir = "data/processed_data"
 
     # Chargement des jeux de données
     X_train = pd.read_csv(os.path.join(input_dir, "X_train.csv"))
